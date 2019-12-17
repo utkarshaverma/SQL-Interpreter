@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SOLUTIONS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<style>
+  /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  height:35px;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+/* Fake image, just for this example */
+.fakeimg {
+  
+  width: 100%;
+  padding: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+
+.main {
+	margin-top: 80px;
+  margin-left: 200px;
+  width:100%; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<style>
+input[type=text], select {
+  width: 100%;
+  height: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 40px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#div2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+ <br><br><br>
+  <!--font size=14><a href="test1.html">Home</a></font-->
+  <a class="w3-button w3-teal w3-center" href="test1.html">HOME</a>
+  <br> <br> 
+  
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header" style="height: 70px;">
+      <a class="navbar-brand"><h3>EMPLOYEE database</h3></a>
+
+    </div>
+  </div>
+</nav>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top " style="max-width:2500px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Right Column -->
+    <div class="main">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>POPULATED DATABASE</h2>
+        <p>RULES:<br>1)For select commands do not use *, write the column names.<br>2)Attributes like movieID, reviewId,title,director,year and review date are of type varchar and stars are of type int.<br>3) Each question carries 2 marks, this set is for 10 marks.</p>
+        <div class="fakeimg" style="height:700px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="emplData.png">
+        </div>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>DATABASE SCHEMA</h2>
+        <div class="fakeimg" style="height:700px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="empSCHEMA.png">
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+        ANSWERS</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>QUESTION 1</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+          Display the project names where the number of employees working on it is 4 and order by project name</h6>
+          <p><br/></p>
+          <hr>
+          <div id="div2">
+  
+    <label for="fname">SOLUTION</label>
+    <p><h3>
+    select proj_name,count(*) from project p, employee e where p.dep_id = e.dep_id group by proj_id having count(*)=4 order by proj_name;</h3></p>
+    <div class="fakeimg" style="height:200px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="E_ans1.png">
+        </div>
+   
+
+  <br>
+</div>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>QUESTION 2</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+          Display the names of the clerks who work on ProjectZ and have been hired after the year 2000.</h6>
+          <p><br/></p>
+          <hr>
+          <div id="div2">
+  
+    <label for="fname">SOLUTION</label>
+    <p><h3>
+    select emp_name from project p,employee e where proj_name = 'ProjectZ'and post='Clerk' and year(hire_date)>2000 and p.dep_id = e.dep_id;</h3></p>
+    <div class="fakeimg" style="height:200px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="E_ans2.png">
+        </div>
+ <br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>QUESTION 3</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+          Display all the unique job groups in the descending order.</h6>
+          <p><br/></p>
+          <hr>
+          <div id="div2">
+ 
+    <label for="fname">SOLUTION</label>
+    <p><h3>select distinct post from employee  order by post desc;</h3></p>
+    <div class="fakeimg" style="height:200px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="E_ans3.png">
+        </div>
+  
+ <br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>QUESTION 4</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+           List all the employees who joined in the month of april or may in descending order of seniority.</h6>
+          <p><br/></p>
+          <hr>
+          <div id="div2">
+ 
+    <label for="fname">SOLUTION</label>
+    <p><h3>
+    select emp_id, emp_name, hire_date from employee where hire_date like '%-04-%' or hire_date like '%-05-%' order by hire_date desc;</h3></p>
+    <div class="fakeimg" style="height:200px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="E_ans4.png">
+        </div>
+  <br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>QUESTION 5</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+          Display the names,id and salary of the clerks and departments who have no comission and work in ABC block.
+          <p><br/></p>
+          <hr>
+          <div id="div2">
+  
+    <label for="fname">SOLUTION</label>
+    <p><h3>
+    select emp_name, emp_id, salary from employee e, department d where dep_location = 'ABC Block' and e.dep_id = d.dep_id and comission IS NULL;
+    </h3></p>
+    <div class="fakeimg" style="height:200px; margin-bottom: 20px ;margin-right: 20px">
+        	<img class="Image" src="E_ans5.png">
+        </div>
+  <!--</form>--><br><br>
+
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+<!-- Footer -->
+<div style="background-color:black ; height:20px ">
+<footer class=" w3-black w3-padding">
+  
+</footer>
+</div>
+
+</body>
+</html>
